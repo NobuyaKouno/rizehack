@@ -18,11 +18,13 @@ div.wrapper {
 
 
 header {
-  background:gray;
-  background-image: url();
+  background-image: url("../img/back1.jpg");
   background-size: cover;
-  height: 350px;
+  background-color:rgba(255,255,255,0.4);
+  background-blend-mode:lighten;
+  height: 550px;
 }
+
 header .menu {
   height: 60px ;
   display: flex;
