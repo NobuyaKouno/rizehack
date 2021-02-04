@@ -22,7 +22,7 @@ header {
   background-size: cover;
   background-color:rgba(255,255,255,0.4);
   background-blend-mode:lighten;
-  height: 550px;
+  height: 100vh;
 }
 
 header .menu {
