@@ -3,21 +3,26 @@
     max-width:60%;
     min-width: 40%;
 }
+.headlogo{
+  height:200px;
+  display: flex;
+  justify-content: center; /*左右中央揃え*/
+  align-items: center;     /*上下中央揃え*/
+}
 .Headline{
     opacity: 0;
     text-align: center;
     animation: SlideIn 1.6s;
     animation-delay : .8s;
     animation-fill-mode: forwards; 
-    line-height: 200px;
   }
-  /* .Headline2{
+  .Headline2{
     opacity: 0;
     text-align: center;
     animation: SlideIn 1.6s;
     animation-delay : 1.5s;
     animation-fill-mode: forwards; 
-  } */
+  }
 @keyframes SlideIn {
     0% {
       opacity: 0;
@@ -29,10 +34,9 @@
     }
   }
 @media screen and (min-width:768px) {
+  .headlogo{height:80vh;}
     .headlogo img{max-width:60%;}
-    .Headline{line-height: 90vh;}
 }
 @media screen and (min-width:1024px) {
-  .headlogo img{max-width:40%;}
-  .Headline{line-height: 100vh;}
+  .headlogo img{max-width:70%;}
 }
