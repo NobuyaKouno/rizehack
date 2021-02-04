@@ -1,22 +1,23 @@
 @charset "utf-8";
-header img{
-    max-width:40%;
+.headlogo img{
+    max-width:60%;
+    min-width: 40%;
 }
 .Headline{
-    margin-top:20px;
     opacity: 0;
     text-align: center;
     animation: SlideIn 1.6s;
     animation-delay : .8s;
     animation-fill-mode: forwards; 
+    line-height: 200px;
   }
-  .Headline2{
+  /* .Headline2{
     opacity: 0;
     text-align: center;
     animation: SlideIn 1.6s;
     animation-delay : 1.5s;
     animation-fill-mode: forwards; 
-  }
+  } */
 @keyframes SlideIn {
     0% {
       opacity: 0;
@@ -27,13 +28,11 @@ header img{
       transform: translateX(0);
     }
   }
-
-  .effect-fade {
-    opacity: 0;/* ここを追加 */
-    animation-duration: 2s;/* アニメーション時間 */
-    animation-delay : 1s;/* 変化開始の時間 */
-    animation-name: TopToBottom;/* アニメーション名 */
-    animation-iteration-count: 1;/* アニメーションの繰り返し（無限）*/
-    animation-fill-mode: forwards; /*これで値を保持*/
-  }
-  
+@media screen and (min-width:768px) {
+    .headlogo img{max-width:60%;}
+    .Headline{line-height: 90vh;}
+}
+@media screen and (min-width:1024px) {
+  .headlogo img{max-width:40%;}
+  .Headline{line-height: 100vh;}
+}
